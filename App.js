@@ -4,12 +4,12 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { theme } from './src/core/theme'
 import {
-  StartScreen,
-  LoginScreen,
-  RegisterScreen,
-  ResetPasswordScreen,
+  Start,
+  Login,
+  Register,
+  ResetPassword,
   Dashboard,
-} from './src/screens'
+} from './src/auth'
 
 const Stack = createStackNavigator()
 
@@ -18,18 +18,18 @@ export default function App() {
     <Provider theme={theme}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="StartScreen"
+          initialRouteName="Start"
           screenOptions={{
             headerShown: false,
           }}
         >
-          <Stack.Screen name="StartScreen" component={StartScreen} />
-          <Stack.Screen name="LoginScreen" component={LoginScreen} />
-          <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+          <Stack.Screen name="Start" component={Start} />
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Register" component={Register} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
           <Stack.Screen
-            name="ResetPasswordScreen"
-            component={ResetPasswordScreen}
+            name="ResetPassword"
+            component={ResetPassword}
           />
         </Stack.Navigator>
       </NavigationContainer>

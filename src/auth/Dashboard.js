@@ -11,14 +11,14 @@ export default function Dashboard({ navigation }) {
       <Logo />
       <Header>Welcome 💫</Header>
       <Paragraph>
-        Congratulations you are logged in.
+        You are logged in to the E-commerce app
       </Paragraph>
       <Button
         mode="outlined"
         onPress={() =>
           navigation.reset({
             index: 0,
-            routes: [{ name: 'StartScreen' }],
+            routes: [{ name: 'Start' }],
           })
         }
       >

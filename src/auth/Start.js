@@ -5,23 +5,23 @@ import Header from '../components/Header'
 import Button from '../components/Button'
 import Paragraph from '../components/Paragraph'
 
-export default function StartScreen({ navigation }) {
+export default function Start({ navigation }) {
   return (
     <Background>
       <Logo />
-      <Header>React Native - Expo - Login</Header>
+      <Header>E-commerce Login</Header>
         <Paragraph>
-          A simple React Native Expo Login template app.
+          Welcome to our e-commerce app
         </Paragraph>
       <Button
         mode="contained"
-        onPress={() => navigation.navigate('LoginScreen')}
+        onPress={() => navigation.navigate('Login')}
       >
         Log in
       </Button>
       <Button
         mode="outlined"
-        onPress={() => navigation.navigate('RegisterScreen')}
+        onPress={() => navigation.navigate('Register')}
       >
         Create an account
       </Button>
